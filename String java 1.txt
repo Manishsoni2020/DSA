@@ -1,0 +1,72 @@
+1)string :java is learning language. 
+Ans..
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String j="java is learning language";
+        System.out.println(j);
+    }
+}
+------------------------------------
+2)string :java is learning language. 
+loop k through print 
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String j="java is learning language";
+        char a[]=j.toCharArray();
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]);
+        }
+    }
+}
+------------------------------------
+3)string :java is learning language. 
+reverse 
+Ans...
+public class Main 
+{
+    public static void main (String[] args) {
+        String j="java is learning language";
+        char a[]=j.toCharArray();
+        for(int i=a.length-1;i>=0;i--)
+        {
+            System.out.print(a[i]);
+        }
+    }
+}
+------------------------------------
+4)string :java is learning language. 
+length
+Ans...
+public class Main 
+{
+    public static void main (String[] args) {
+        String j="java is learning language";
+        char a[]=j.toCharArray();
+        System.out.println(j.length());
+        
+    }
+}
+------------------------------------
+5)string :java is learning language. 
+count :
+Ans..
+public class Main 
+{
+    public static void main (String[] args) {
+        String j="java is learning language";
+        char a[]=j.toCharArray();
+        int count=0;
+        for(int i=a.length-1;i>=0;i--)
+        {
+           count ++;
+        }
+        System.out.println(count);
+    }
+}
+------------------------------------
