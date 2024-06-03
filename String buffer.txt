@@ -1,0 +1,72 @@
+all predefine method of string buffer 
+-----------------------------------------
+1.Normal print
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuffer sb=new StringBuffer("hello");
+        System.out.println(sb);
+    }
+}
+-----------------------------------------
+2.Append()
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuffer sb=new StringBuffer("hello");
+        sb.append("world");
+        System.out.println(sb);
+    }
+}
+-----------------------------------------
+3.Reverse()
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuffer sb=new StringBuffer("hello");
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
+-----------------------------------------
+4.Replace()
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuffer sb=new StringBuffer("hello");
+        sb.replace(1,3,"bye");
+        System.out.println(sb);
+    }
+}
+-----------------------------------------
+5.Delete()
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuffer sb=new StringBuffer("hello");
+        sb.delete(1,3);
+        System.out.println(sb);
+    }
+}
+-----------------------------------------
+6.Length()
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuffer sb=new StringBuffer("hello");
+        System.out.println(sb.length());
+    }
+}
+-----------------------------------------
