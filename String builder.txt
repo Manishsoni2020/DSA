@@ -1,0 +1,72 @@
+all predefine method of string builder
+-----------------------------------------
+1.Basic print()
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuilder sb=new StringBuilder("hello");
+        System.out.println(sb);
+    }
+}
+------------------------------------------
+2.insert()
+Ans..
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuilder sb=new StringBuilder("hello");
+        sb.insert(1,"java");
+        System.out.println(sb);
+    }
+}
+------------------------------------------
+3.replace()
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuilder sb=new StringBuilder("hello");
+        sb.replace(1,3,"java");
+        System.out.println(sb);
+    }
+}
+------------------------------------------
+4.delete()
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuilder sb=new StringBuilder("hello");
+        sb.delete(1,3);
+        System.out.println(sb);
+    }
+}
+------------------------------------------
+5.reverse()
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuilder sb=new StringBuilder("hello");
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
+------------------------------------------
+6.append()
+Ans..
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuilder sb=new StringBuilder("hello");
+        sb.append("world");
+        System.out.println(sb);
+    }
+}
+------------------------------------------
