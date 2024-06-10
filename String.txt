@@ -1,0 +1,464 @@
+1)string : 
+print 
+
+regex is my learning platform 
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="regex is my learning platform";
+		System.out.println(s);
+	}
+}
+
+--------------------
+2)
+string : 
+print 
+
+regex is my learning platform 
+count : number of characters 
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="regex is my learning platform";
+		System.out.println(s.length());
+	}
+}
+
+--------------------------------------------------
+3)String : 
+input a character check characher present or not ? 
+how many time present ? 
+
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="regex is my learning platform";
+		char a[]=s.toCharArray();
+		int count=0;
+		for(int i=0;i<a.length;i++)
+		{
+		    if(a[i]=='a')
+		    {
+		        System.out.println("yes present "+i);
+		    }
+		    if(a[i]=='a')
+		    {
+		        count++;
+		    }
+		}
+		System.out.println("times "+count);
+	}
+}
+
+-------------------------------------------------------------------------
+4)String vowel is present or not ?
+how many vowel present (counting)
+which is consonant and vowel 
+regex is my learning platform :present
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="regex is my learning platform";
+		char a[]=s.toCharArray();
+		int count=0;
+		for(int i=0;i<a.length;i++)
+		{
+		    if(a[i]=='a' || a[i]=='e' || a[i]=='i'||a[i]=='o'||a[i]=='u')
+		    {
+		        System.out.println("vovel "+i);
+		    }
+		    if(a[i]=='a' || a[i]=='e' || a[i]=='i'||a[i]=='o'||a[i]=='u')
+		    {
+		        count++;
+		    }
+		}
+		System.out.println(count+" times vovel present");
+	}
+}
+
+---------------------------------------------------
+6)
+String is print reverse 
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="regex is my learning platform";
+		char a[]=s.toCharArray();
+		int count=0;
+		for(int i=a.length-1;i>=0;i--)
+		{
+		    System.out.print(a[i]);
+		}
+	}
+}
+
+----------------------------------------------------------------------------
+8)
+which character is duplicate in string? 
+how much? 
+index 
+which 
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="regex is my learning platform";
+		char a[]=s.toCharArray();
+		int count=0;
+		for(int i=0;i<a.length;i++)
+		{
+		    for(int j=i+1;j<a.length;j++)
+		    {
+		        if(a[i]==a[j])
+		        {
+		            System.out.print(a[i]+" ");
+		        }
+		        
+		    }
+		}
+		System.out.println();
+		for(int i=0;i<a.length;i++)
+		{
+		    for(int j=i+1;j<a.length;j++)
+		    {
+		        if(a[i]==a[j])
+		        {
+		            System.out.print(i+" ");
+		        }
+		        
+		    }
+		}
+		System.out.println();
+		for(int i=0;i<a.length;i++)
+		{
+		    for(int j=i+1;j<a.length;j++)
+		    {
+		        if(a[i]==a[j])
+		        {
+		            count++;
+		        }
+		        
+		    }
+		}
+		System.out.println("times"+count);
+	}
+}
+
+-----------------------------------------------------------------------------------
+9)
+how many space present in a string ? 
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="regex is my learning platform";
+		char a[]=s.toCharArray();
+		int count=0;
+		for(int i=0;i<a.length;i++)
+		{
+		    if(a[i]==' ')
+		    {
+		        count++;
+		    }
+		}
+		System.out.println("times space "+count);
+	}
+}
+
+------------------------------------------
+java is a platform independent language. 
+
+e :present 
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="java is a platform independent language";
+		int count=0;
+		char a[]=s.toCharArray();
+		for(int i=0;i<a.length;i++)
+		{
+		    if(a[i]=='e')
+		    {
+		        System.out.println("yes ");
+		        break;
+		    }
+		}
+	}
+}
+
+-------------------------------------------------------------
+java is a platform independent language. 
+
+e :first time : index :present 
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="java is a platform independent language";
+		int count=0;
+		char a[]=s.toCharArray();
+		for(int i=0;i<a.length;i++)
+		{
+		    if(a[i]=='e')
+		    {
+		        System.out.println("on index "+i);
+		        break;
+		    }
+		}
+	}
+}
+
+-------------------------------------------------------------
+java is a platform independent language. 
+
+e :first time all e with index :present 
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="java is a platform independent language";
+		int count=0;
+		char a[]=s.toCharArray();
+		for(int i=0;i<a.length;i++)
+		{
+		    if(a[i]=='e')
+		    {
+		        System.out.println(" yes on index "+i);
+		    }
+		}
+	}
+}
+
+-------------------------------------------------------------
+java is a platform independent language. 
+
+e :count  
+Ans...
+public class Main
+{
+	public static void main(String[] args) {
+		String s="java is a platform independent language";
+		int count=0;
+		char a[]=s.toCharArray();
+		for(int i=0;i<a.length;i++)
+		{
+		    if(a[i]=='e')
+		    {
+		        count++;
+		    }
+		}
+		System.out.println(" e present count = "+count);
+	}
+}
+
+-------------------------------------------------------------
+java is a platform independent language. 
+
+vowel and consoant 
+Ans...
+incompelte
+public class Main
+{
+	public static void main(String[] args) {
+		String s="java is a platform independent language";
+		int count=0;
+		char a[]=s.toCharArray();
+		for(int i=0;i<a.length;i++)
+		{
+		    if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u')
+		    {
+		        System.out.print(a[i]+" ");
+		    }
+		}
+		System.out.println();
+		for(int i=0;i<a.length;i++)
+		{
+		    if(a[i]!='a'||a[i]!='e'||a[i]!='i'||a[i]!='o'||a[i]!='u')
+		    {
+		        System.out.print(a[i]+" ");
+		    }
+		}
+		
+	}
+}
+
+-------------------------------------------------------------
+java is a platform independent language. 
+
+vowel only 
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String n="java is a platform independent language";
+        char a[]=n.toCharArray();
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u')
+            {
+                System.out.print(a[i]+" ");
+            }
+        }
+    }
+}
+----------------------------------------------------------
+java is a platform independent language. 
+
+vowel how much 
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String n="java is a platform independent language";
+        char a[]=n.toCharArray();
+        int count=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u')
+            {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+-------------------------------------------------------------
+java is a platform independent language. 
+
+vowel index 
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String n="java is a platform independent language";
+        char a[]=n.toCharArray();
+        int count=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u')
+            {
+                System.out.print(i+" ");
+            }
+        }
+        
+    }
+}
+-------------------------------------------------------------
+java is a platform independent language. 
+
+index print only vowel index 
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String n="java is a platform independent language";
+        char a[]=n.toCharArray();
+        int count=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u')
+            {
+                System.out.print(a[i]+" ");
+            }
+        }
+        System.out.println();
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u')
+            {
+                System.out.print(i+" ");
+            }
+        }
+        
+    }
+}
+-------------------------------------------------------------
+java is a platform independent language. 
+
+ consoant :how much 
+Ans..
+ public class Main 
+{
+    public static void main(String[] args)
+    {
+        String s="java is programming language";
+        char a[]=s.toCharArray();
+        int count=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u' || a[i]==' ')
+            {
+                
+            }
+            else 
+            {
+                count++;
+            }
+           
+        }
+         System.out.print(count);
+    }
+} 
+-------------------------------------------------------------
+java is a platform independent language. 
+
+ consoant :index (j :0)
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String s="java is programming language";
+        char a[]=s.toCharArray();
+        int count=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u' || a[i]==' ')
+            {
+                
+            }
+            else 
+            {
+                System.out.print(i+" ");
+            }
+        }
+    }
+} 
+-------------------------------------------------------------
+java is a platform independent language. 
+
+ consoant :which 
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String s="java is programming language";
+        char a[]=s.toCharArray();
+        int count=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u' || a[i]==' ')
+            {
+                
+            }
+            else 
+            {
+                System.out.print(a[i]+" ");
+            }
+        }
+    }
+} 
+--------------------------------------------------------------
+
