@@ -1,0 +1,37 @@
+selection sort algorithm 
+------------------------------
+Ans...
+public class Main
+{
+    static void display(int a[])
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+        System.out.println();
+    }
+    static void selectionsort(int a[])
+    {
+        for(int i=0;i<a.length-1;i++)
+        {
+            int min=i;
+            for(int j=i+1;j<a.length;j++)
+            {
+                if(a[j]<a[min])
+                {
+                    min=j;
+                }
+            }
+            int temp=a[i];
+            a[i]=a[min];
+            a[min]=temp;
+        }
+    }
+	public static void main(String[] args) {
+		int a[]={21,45,10,41,89,20};
+		display(a);
+		selectionsort(a);
+		display(a);
+	}
+}
