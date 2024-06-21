@@ -1,0 +1,121 @@
+implement a method to insert a node at the end of the linkedlist : 
+
+add 
+Ans...
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    static class Linkedlist
+    {
+        Node head=null;
+        Node tail=null;
+        void add(int a)
+        {
+            Node obj=new Node(a);
+            if(head==null)
+            {
+                head=obj;
+            }
+            else 
+            {
+                tail.next=obj;
+            }
+            tail=obj;
+        }
+        void print()
+        {
+            Node obj=head;
+            {
+                while(obj!=null)
+                {
+                    System.out.print(obj.data+" ");
+                    obj=obj.next;
+                }
+            }
+        }
+    }
+    public static void main(String [] args)
+    {
+        Linkedlist li=new Linkedlist();
+        li.add(1);
+        li.add(2);
+        li.add(3);
+        li.add(4);
+        li.add(5);
+        li.print();
+        
+    }
+}
+-------------------------
+size
+Ans...
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    static class Linkedlist
+    {
+        Node head=null;
+        Node tail=null;
+        void add(int a)
+        {
+            Node obj=new Node(a);
+            if(head==null)
+            {
+                head=obj;
+            }
+            else 
+            {
+                tail.next=obj;
+            }
+            tail=obj;
+        }
+        void print()
+        {
+            Node obj=head;
+            {
+                while(obj!=null)
+                {
+                    System.out.print(obj.data+" ");
+                    obj=obj.next;
+                }
+            }
+        }
+    }
+    static void size(Node a)
+    {
+        int count=0;
+        while(a!=null)
+        {
+            count++;
+            a=a.next;
+        }
+        System.out.println(count);
+    }
+    public static void main(String [] args)
+    {
+        Linkedlist li=new Linkedlist();
+        li.add(1);
+        li.add(2);
+        li.add(3);
+        li.add(4);
+        li.add(5);
+        size(li);
+    }
+}
+------------------------- 
