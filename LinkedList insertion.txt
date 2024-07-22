@@ -1,0 +1,232 @@
+insertion of the element at the end of the linkedlist : 
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    public static class Linkedlist
+    {
+        Node head=null;
+        Node tail=null;
+        void insert(int val)
+        {
+            Node temp=new Node(val);
+            if(head==null)
+            {
+                head=temp;
+                tail=temp;
+            }
+            else 
+            {
+                tail.next=temp;
+                tail=temp;
+            }
+        }
+        void display()
+        {
+            Node temp=head;
+            while(temp!=null)
+            {
+                System.out.println(temp.data+" ");
+                temp=temp.next;
+            }
+        }
+    }
+    public static void main(String[] args)
+    {
+        Linkedlist li =new Linkedlist();
+        li.insert(1);
+        li.insert(2);
+        li.insert(3);
+        li.display();
+    }
+}
+------------------------------
+
+size method in linked list :
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    public static class Linkedlist
+    {
+        Node head=null;
+        Node tail=null;
+        void insert(int num)
+        {
+            Node a=new Node(num);
+            if(head==null)
+            {
+                head=a;
+                tail=a;
+            }
+            else 
+            {
+                tail.next=a;
+                tail=a;
+            }
+        }
+        void display()
+        {
+            Node temp=head;
+            while(temp!=null)
+            {
+                System.out.println(temp.data+" ");
+                temp=temp.next;
+            }
+        }
+        void size()
+        {
+            Node size=head;
+            int count=0;
+            while(size!=null)
+            {
+                count++;
+                size=size.next;
+            }
+            System.out.println(count);
+        }
+    }
+    public static void main(String[] args)
+    {
+        Linkedlist lo=new Linkedlist();s
+        lo.insert(1);
+        lo.insert(2);
+        lo.insert(3);
+        lo.insert(4);
+        lo.display();
+        lo.size();
+    }
+}
+------------------------------
+
+insertion of the element at the head of the linkedlist : 
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    public static class Linkedlist
+    {
+        Node head=null;
+        Node tail=null;
+        void insert(int val)
+        {
+            Node temp=new Node(val);
+            if(head==null)
+            {
+                head=temp;
+            }
+            else 
+            {
+                tail.next=temp;
+            }
+            tail=temp;
+        }
+        void display()
+        {
+            Node temp=head;
+            while(temp!=null)
+            {
+                System.out.println(temp.data+" ");
+                temp=temp.next;
+                
+            }
+        }
+    }
+    public static void main(String[] args)
+    {
+        Linkedlist ll=new Linkedlist();
+        ll.insert(1);
+        ll.insert(2);
+        ll.insert(3);
+        ll.insert(4);
+        ll.display();
+    }
+}
+
+------------------------------
+
+insert element at any index :
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    public static class Linkedlist
+    {
+        Node head=null;
+        Node tail=null;
+        void insert(int val)
+        {
+            Node temp=new Node(val);
+            if(head==null)
+            {
+                head=temp;
+            }
+            else 
+            {
+                tail.next=temp;
+            }
+            tail=temp;
+        }
+        void display()
+        {
+            Node temp=head;
+            while(temp!=null)
+            {
+                System.out.println(temp.data+" ");
+                temp=temp.next;
+                
+            }
+        }
+        void insertAtHead(int val,int index)
+        {
+            Node m=new Node(val);
+            Node temp=head;
+            for(int i=1;i<index-1;i++)
+            {
+                temp=temp.next;
+            }
+            m.next=temp.next;
+            temp.next=m;
+        }
+    }
+    public static void main(String[] args)
+    {
+        Linkedlist ll=new Linkedlist();
+        ll.insert(1);
+        ll.insert(2);
+        ll.insert(3);
+        ll.insert(4);
+        ll.display();
+        ll.insertAtHead(10,3);
+        ll.display();
+    }
+}
+------------------------------
