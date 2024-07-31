@@ -1,0 +1,275 @@
+1)create doubly linked list 
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node previous;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    public static void main(String[] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        Node e=new Node(5);
+        a.previous=null;
+        a.next=b;
+        b.previous=a;
+        b.next=c;
+        c.previous=b;
+        c.next=d;
+        d.previous=c;
+        d.next=e;
+        e.previous=d;
+        e.next=null;
+    }
+}
+--------------------------------
+2)print through head 
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node previous;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    static void display(Node head)
+    {
+        Node temp=head;
+        while(temp!=null)
+        {
+            System.out.println(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+    public static void main(String[] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        Node e=new Node(5);
+        a.previous=null;
+        a.next=b;
+        b.previous=a;
+        b.next=c;
+        c.previous=b;
+        c.next=d;
+        d.previous=c;
+        d.next=e;
+        e.previous=d;
+        e.next=null;
+        display(a);
+    }
+}
+--------------------------------
+3)print through tail
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node previous;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    static void display(Node head)
+    {
+        Node temp=head;
+        while(temp!=null)
+        {
+            System.out.println(temp.data+" ");
+            temp=temp.previous;
+        }
+    }
+    public static void main(String[] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        Node e=new Node(5);
+        a.previous=null;
+        a.next=b;
+        b.previous=a;
+        b.next=c;
+        c.previous=b;
+        c.next=d;
+        d.previous=c;
+        d.next=e;
+        e.previous=d;
+        e.next=null;
+        display(e);
+    }
+}
+--------------------------------
+4)print through random
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node previous;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    static void display(Node random)
+    {
+        Node temp=random;
+        while(temp.previous!=null)
+        {
+            temp=temp.previous;
+        }
+        while(temp!=null)
+        {
+            System.out.println(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+    public static void main(String[] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        Node e=new Node(5);
+        a.previous=null;
+        a.next=b;
+        b.previous=a;
+        b.next=c;
+        c.previous=b;
+        c.next=d;
+        d.previous=c;
+        d.next=e;
+        e.previous=d;
+        e.next=null;
+        display(c);
+    }
+}
+--------------------------------
+5)insertion at head 
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node previous;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    static Node insertHead(Node head,int x)
+    {
+        Node t=new Node(x);
+        t.next=head;
+        head.previous=t;
+        head=t;
+        return head;
+    }
+    static void display(Node random)
+    {
+        Node temp=random;
+        while(temp!=null)
+        {
+            System.out.println(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+    public static void main(String[] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        Node e=new Node(5);
+        a.previous=null;
+        a.next=b;
+        b.previous=a;
+        b.next=c;
+        c.previous=b;
+        c.next=d;
+        d.previous=c;
+        d.next=e;
+        e.previous=d;
+        e.next=null;
+        Node p=insertHead(a,36);
+        display(p);
+    }
+}
+--------------------------------
+6)insertion element at the tail of the doubly linkedlist :
+public class Main 
+{
+    static class Node 
+    {
+        int data;
+        Node next;
+        Node previous;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    public static void insertAttail(Node head,int x)
+    {
+        Node temp=head;
+        while(temp.next!=null)
+        {
+            temp=temp.next;
+        }
+        Node t=new Node(x);
+        temp.next=t;
+        t.previous=temp;
+    }
+    static void display(Node head)
+    {
+        Node temp=head;
+        while(temp!=null)
+        {
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+    public static void main(String[] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        Node e=new Node(5);
+        a.previous=null;
+        a.next=b;
+        b.previous=a;
+        b.next=c;
+        c.previous=b;
+        c.next=d;
+        d.previous=c;
+        d.next=e;
+        e.previous=d;
+        e.next=null;
+        display(a);
+        System.out.println();
+        insertAttail(a,20);
+        display(a);
+    }
+}
+--------------------------------
