@@ -1,0 +1,104 @@
+insert element at the bottom of the stack and at any index 
+import java.util.*;
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        Stack<Integer> st=new Stack<>();
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        st.push(5);
+        int index=5;
+        int value=56;
+        Stack<Integer> ht=new Stack<>();
+        while(st.size()>=index)
+        {
+            ht.push(st.pop());
+        }
+        ht.push(value);
+        while(ht.size()>0)
+        {
+            st.push(ht.pop());
+        }
+        System.out.println(st);
+    }
+}
+----------------------------------------------------------------------
+print all the elements through array in stack 
+import java.util.*;
+public class Main 
+{
+    public static void main (String[] args) {
+        Stack<Integer> st=new Stack<>();
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        st.push(5);
+        int n=st.size();
+        int a[]=new int[n];
+        for(int i=n-1;i>=0;i--)
+        {
+            a[i]=st.pop();
+        }
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+----------------------------------------------------------------------
+print all the elements of the stack through normally 
+import java.util.*;
+public class Main 
+{
+    public static void main (String[] args) {
+        Stack<Integer> st=new Stack<>();
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        st.push(5);
+        Stack<Integer> gt=new Stack<>();
+        while(st.size()>0)
+        {
+            gt.push(st.pop());
+        }
+        while(gt.size()>0)
+        {
+            int x=gt.pop();
+            System.out.print(x+" ");
+            st.push(x);
+        }
+    }
+}
+----------------------------------------------------------------------
+stack underflow of the stack 
+import java.util.*;
+public class Main 
+{
+    public static void main (String[] args) {
+        Stack<Integer> st=new Stack<>();
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        st.push(5);
+        System.out.println(st+" ");
+        st.pop();
+        System.out.println(st+" ");
+        st.pop();
+        System.out.println(st+" ");
+        st.pop();
+        System.out.println(st+" ");
+        st.pop();
+        System.out.println(st+" ");
+        st.pop();
+        System.out.println(st+" ");
+        st.pop();//empty
+        System.out.println(st+" ");
+    }
+}
+----------------------------------------------------------------------
