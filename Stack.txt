@@ -1,0 +1,54 @@
+stack
+12345
+54321
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Stack<Integer> st=new Stack<>();
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        System.out.println(st+"st");
+        Stack <Integer> gt=new Stack<>();
+        while(st.size()>0)
+        {
+            gt.push(st.pop());
+        }
+        System.out.println(gt+"gt");
+        System.out.println(st+"st empty");
+    }
+}
+-----------------------------------------
+12345
+54321
+12345
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Stack<Integer> st=new Stack<>();
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        System.out.println(st+"st");
+        Stack <Integer> gt=new Stack<>();
+        while(st.size()>0)
+        {
+            gt.push(st.pop());
+        }
+        System.out.println(gt+"gt");
+        System.out.println(st+"st empty");
+        while(gt.size()>0)
+        {
+            st.push(gt.pop());
+        }
+        System.out.println(st+" new st");
+        System.out.println(gt+"new gt");
+    }
+}
+-----------------------------------------
